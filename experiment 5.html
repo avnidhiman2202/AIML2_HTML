@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Room Booking Form</title>
+</head>
+<body>
+<center>
+<div style="width: 50%; padding: 20px; margin-top: 50px;">
+    <h1>Student Registration Form</h1>
+</div>
+</center>
+<fieldset>
+    <legend>Student Registration Form</legend>
+    <h2>Student Registration Form</h2>
+    <form action="./response.html" method="get">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="Full name" minlength="3" maxlength="100" placeholder="Enter your full name"
+            required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" minlength="3" maxlength="100" placeholder="Enter your email" required><br><br>
+
+        <label for="pass">Password:</label>
+        <input type="password" id="password" name="password" minlength="6" maxlength="20" placeholder="Enter your password" required><br><br>
+        <label for="Gender">Gender:</label>
+        <input type="radio" id="gender-male" name="gender" value="male" required> Male <label for="gender-male"></label>
+        <input type="radio" id="gender-female" name="gender" value="female" required> Female <label for="gender-female"></label>
+            <br><br>
+        <label for="COURSE">COURSE:</label>
+            <select name="Course" id="COURSE" required>
+                <option value="">Select a course</option>
+                <option value="computer_science">Computer Science</option>
+                <option value="mathematics">Mathematics</option>
+                <option value="physics">Physics</option>
+            </select><br><br>
+        <label for="tel">Contact Number:</label>
+        <input type="tel" name="tel" id="tel" maxlength="10" placeholder="Enter your Contact number" required><br><br>
+
+        <label for="address">Address:</label>
+        <textarea name="add" id = "address" placeholder="Enter your message here"></textarea><br><br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+</fieldset>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Bio Data</legend>
+        <form action="./response.html" name="bioForm" target="_blank" method="get">
+            <label for="name">Username:</label>
+            <input type="text" id="name" name="name" minlength="3" maxlength="20" placeholder="Enter your username" required><br><br>
+
+            <label for="pass">Password:</label>
+            <input type="password" id="password" name="password" minlength="6" maxlength="20" placeholder="Enter your password" required><br><br>
+
+            <label for="DOB">Date of Birth:</label>
+            <input type="date" id="DOB" name="DOB" placeholder="Enter your date of birth" required><br><br>
+
+            <label for="Gender">Gender:</label>
+            <input type="radio" id="gender-male" name="gender" value="male" required> Male <label for="gender-male"></label>
+            <input type="radio" id="gender-female" name="gender" value="female" required> Female <label for="gender-female"></label>
+            <br><br>
+
+            <label for="hobby">Hobbies:</label>
+            <input type="checkbox" id="hobby-1" name="hobby 1" value="sports"> Sports <label for="hobby-1">Cricket</label>
+            <input type="checkbox" id="hobby-2" name="hobby 2" value="sports"> Sports <label for="hobby-2">Football</label><br><br>
+            
+            <label for="address">Address:</label>
+            <textarea name="add" id = "address" placeholder="Enter your message here"></textarea><br><br>
+
+            <label for="tel">Phone Number:</label>
+            <input type="tel" name="tel" id="tel" placeholder="Enter your phone number" required><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email address" required><br><br>
+            <label for="attempts">Attempts:</label>
+            <input type="number" name="attempts" id="attempts" placeholder="Enter your number" required><br><br>
+            <label for="url">Homepage:</label>
+            <input type="url" name="url" id="url" placeholder="Enter your URL" required><br><br>
+            <label for="file">Upload Resume:</label>
+            <input type="file" name="file" id="file" required><br><br>
+            <label for="LANGUAGE">Language:</label>
+            <select name="LANGUAGE" id="LANGUAGE" required>
+                <option value="">Select a language</option>
+                <option value="english">English</option>
+                <option value="spanish">Spanish</option>
+                <option value="french">French</option>
+            </select><br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </fieldset>
+</body>
+</html>
